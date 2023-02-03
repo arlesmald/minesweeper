@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="minesweeperStyle.css">
+	<script src="minesweeperEngine.js"></script>
+</head>
+<body>
+	<h2>Minesweeper</h2>
+	<p>Instructions: To start playing click in the Options button and select a difficulty</p>
+	<form>
+		<button id="btnOptions" type="button" onclick="openCloseGameOptions()">Options</button>
+		<!-- TASK #1: Boton que muestra u oculta el formulario de juego personalizado -->
+		<button id="btnCustomGame" type="button" onclick="openCloseCustomGame()">Start custom game</button><br>
+		<!-- TASK #2: Boton que muestra los 5 mejores puntajes -->
+		<button style="margin: 5px 0px;" id="btnScores" type="button" onclick="getScores()">See Best Scores</button>
+		<br>
+		Mine count:<br>
+		<input type="text" id="txt_mineCount"><br>
+		Time:<br>
+		<input type="text" id="txt_time">
+	</form>
+	<div id="gameBoard">
+		<table id="gameTable"></table>
+	</div>
+	<div id="gameOptions">
+		<form class="gameOptionsForm">
+  			<button type="button" class="optionsBTN" onclick="startNewGame('Beginner')">Beginner (9x9, 10 Mines)</button><br>
+			<button type="button" class="optionsBTN" onclick="startNewGame('Intermediate')">Intermediate (16x16, 40 Mines)</button><br>
+			<button type="button" class="optionsBTN" onclick="startNewGame('Expert')">Expert (16x16, 40 Mines)</button><br>
+		</form>		
+	</div>
+
+	<!-- TASK #1: Div que contiene el formulario para crear un juego personalizado -->
+	<div id="customGameOptions" style="display: none;">
+		<form class="customGameOptionsForm">
+			<div style="width: 100%;">
+				Rows:<br>
+				<input class="customInput" type="number" id="txt_rows"><br>
+				Columns:<br>
+				<input class="customInput" type="number" id="txt_cols"><br>
+				Mines:<br>
+				<input class="customInput" type="number" id="txt_mines"><br>
+			</div>
+			<button type="button" class="btnStartCustomGame" onclick="startNewGame('Custom')">Start Game</button>
+		</form>
+	</div>
+</body>
+</html>

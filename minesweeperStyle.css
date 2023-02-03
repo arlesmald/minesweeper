@@ -1,0 +1,92 @@
+html, body{
+  width:100%;
+  height:100%;
+}
+
+#gameBoard{
+	border-style: solid;
+	border-color: black;
+	float: none;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	display: none;
+}
+
+#gameOptions{
+	display: none;
+	width: 275px;
+	height: 100px;
+	background-color: #5AB3BD;
+	float: none;
+	position: absolute;
+	-webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.gameOptionsForm{
+	margin-left: 10px;
+	margin-top: 3px;
+}
+
+/* TASK #1: Aplicamos los estilos al div que contiene el form para juego personalizado */
+#customGameOptions{
+	/* display: block; */
+	width: 275px;
+	height: 180px;
+	margin-top: 7px;
+	background-color: #5AB3BD;
+	float: none;
+	position: absolute;
+	-webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.customGameOptionsForm{
+	margin: 4px;
+}
+
+/* TASK #1: Clase creada para los inputs en el formulario de juego personalizado */
+.customInput {
+	width: 100%;
+	box-sizing: border-box;
+	height: 25px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+/* TASK #1: Clase creada para el boton que inicia el juego en el formulario de juego personalizado */
+.btnStartCustomGame {
+	margin-top: 10px;
+	width:100%;
+	height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.optionsBTN{
+	width: 250px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td{
+  border: 1px solid #dddddd;
+  background-image: url(images/facingDown.png); 
+  background-size: cover;
+  text-align: left;
+  padding: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+/*tr:nth-child(even) {
+  background-color: #dddddd;
+}/**/
